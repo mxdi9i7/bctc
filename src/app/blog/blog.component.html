@@ -1,0 +1,12 @@
+<p>
+  blog works!
+</p>
+<div class="container">
+	<div class="row">
+		<div class="card card-block" *ngFor="let blog of blogs">
+			<h2>author: {{blog.author}}</h2>
+			<h3>Comment: {{blog.comment}}</h3>
+			<i>Date: {{blog.created_at}}</i>
+		</div>
+	</div>
+</div>
