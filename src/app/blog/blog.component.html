@@ -3,10 +3,19 @@
 </p>
 <div class="container">
 	<div class="row">
-		<div class="card card-block" *ngFor="let blog of blogs">
-			<h2>author: {{blog.author}}</h2>
-			<h3>Comment: {{blog.comment}}</h3>
-			<i>Date: {{blog.created_at}}</i>
+		<form (submit)="addComment($event)" class="input-field">
+			
+			<input type="text" [(ngModel)]="author" name="author" required="">
+			<label for="author">Author:</label>
+			<input type="text" [(ngModel)]="comment" name="comment" required="">
+			<label for="comment">Content:</label>
+			<input type="submit" class="btn btn-large right">
+		</form>
+		<div class="card card-block" *ngFor="let comment of comments">
+			<h2>author: {{comment.author}}</h2>
+			<h3>Comment: {{comment.comment}}</h3>
+			<i>Date: {{comment.created_at}}</i>
+			<button class="btn btn-large red" (click)="deleteComment(comment._id)">Delete</button>
 		</div>
 	</div>
 </div>

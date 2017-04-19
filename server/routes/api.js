@@ -12,5 +12,21 @@ router.get('/blog', (req, res) => {
 			res.json(commentsData)
 		})
 });
-
+router.post('/post-blog', (req, res, next) => {
+	var comment = req.body;
+	db.comments.save(comment, function(err, comment) {
+		if (err) {
+			res.send(err)
+		} 
+		res.json(comment)
+	})
+})
+router.delete('/delete-blog/:id', (req, res, next) => {
+	db.comments.remove({_id: mongojs.ObjectId(req.params.id)}, function(err, comment) {
+		if (err) {
+			res.send(err)
+		} 
+		res.json(comment)
+	})
+})
 module.exports = router;
