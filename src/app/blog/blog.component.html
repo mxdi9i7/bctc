@@ -1,6 +1,4 @@
-<p>
-  blog works!
-</p>
+<app-nav> </app-nav>
 <div class="container">
 	<div class="row">
 		<form (submit)="addComment($event)" class="input-field">
@@ -9,7 +7,7 @@
 			<label for="author">Author:</label>
 			<input type="text" [(ngModel)]="comment" name="comment" required="">
 			<label for="comment">Content:</label>
-			<input type="submit" class="btn btn-large right">
+			<button type="submit" class="btn btn-large right">Submit</button>
 		</form>
 		<div class="card card-block" *ngFor="let comment of comments">
 			<h2>author: {{comment.author}}</h2>
@@ -19,3 +17,4 @@
 		</div>
 	</div>
 </div>
+<app-footer> </app-footer>

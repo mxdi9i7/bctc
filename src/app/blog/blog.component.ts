@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogService } from '../blog.service';
+import { NavComponent } from '../nav/nav.component'
+import { FooterComponent } from '../footer/footer.component'
 
 @Component({
   selector: 'app-blog',

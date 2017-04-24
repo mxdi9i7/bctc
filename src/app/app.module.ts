@@ -10,23 +10,42 @@ import { BlogService } from './blog.service';
 import { AppComponent } from './app.component';
 import { CommentComponent } from './comment/comment.component';
 import { BlogComponent } from './blog/blog.component';
+import { TutComponent } from './tut/tut.component';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const ROUTES = [
 {
   path: '',
-  redirectTo: 'blog',
-  pathMatch: 'full'
+  component: HomeComponent
+  // redirectTo: 'blog',
+  // pathMatch: 'full'
 },
 {
   path: 'blog',
   component: BlogComponent
+},
+{
+  path: 'tut',
+  component: TutComponent
 }]
 
 @NgModule({
   declarations: [
     AppComponent,
     CommentComponent,
-    BlogComponent
+    BlogComponent,
+    TutComponent,
+    NavComponent,
+    FooterComponent,
+    HomeComponent,
+    AboutComponent,
+    ServicesComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
