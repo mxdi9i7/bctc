@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { GlobeComponent } from './globe/globe.component';
 
 const ROUTES = [
 {
@@ -32,7 +33,20 @@ const ROUTES = [
 {
   path: 'tut',
   component: TutComponent
-}]
+},
+{
+  path: 'about',
+  component: AboutComponent
+},
+{
+  path: 'services',
+  component: ServicesComponent
+},
+{
+  path: 'projects',
+  component: ProjectsComponent
+},
+]
 
 @NgModule({
   declarations: [
@@ -45,7 +59,8 @@ const ROUTES = [
     HomeComponent,
     AboutComponent,
     ServicesComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    GlobeComponent,
   ],
   imports: [
     BrowserModule,
