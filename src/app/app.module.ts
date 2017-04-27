@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { GlobeComponent } from './globe/globe.component';
+import { HomeDirectionsComponent } from './home-directions/home-directions.component';
 
 const ROUTES = [
 {
@@ -61,6 +62,7 @@ const ROUTES = [
     ServicesComponent,
     ProjectsComponent,
     GlobeComponent,
+    HomeDirectionsComponent,
   ],
   imports: [
     BrowserModule,
