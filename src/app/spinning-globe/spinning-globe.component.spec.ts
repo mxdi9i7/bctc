@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GlobeComponent } from './globe.component';
+import { SpinningGlobeComponent } from './spinning-globe.component';
 
-describe('GlobeComponent', () => {
-  let component: GlobeComponent;
-  let fixture: ComponentFixture<GlobeComponent>;
+describe('SpinningGlobeComponent', () => {
+  let component: SpinningGlobeComponent;
+  let fixture: ComponentFixture<SpinningGlobeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GlobeComponent ]
+      declarations: [ SpinningGlobeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GlobeComponent);
+    fixture = TestBed.createComponent(SpinningGlobeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
