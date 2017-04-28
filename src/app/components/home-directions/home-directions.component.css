@@ -1,0 +1,17 @@
+
+.leftDirections {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.rightDirections {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+.directionButtons ul li{
+  margin: 30px 0;
+}
+.directionButtons ul li button {
+  min-width: 150px;
+}

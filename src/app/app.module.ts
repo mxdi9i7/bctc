@@ -17,7 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { HomeDirectionsComponent } from './home-directions/home-directions.component';
+import { HomeDirectionsComponent } from './components/home-directions/home-directions.component';
 import { SpinningGlobeComponent } from './spinning-globe/spinning-globe.component';
 
 const ROUTES = [
