@@ -18,7 +18,10 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HomeDirectionsComponent } from './components/home-directions/home-directions.component';
-import { SpinningGlobeComponent } from './spinning-globe/spinning-globe.component';
+import { SpinningGlobeComponent } from './components/spinning-globe/spinning-globe.component';
+import { ServiceWebComponent } from './service-web/service-web.component';
+import { ServiceAppComponent } from './service-app/service-app.component';
+import { ServicePhotoComponent } from './service-photo/service-photo.component';
 
 const ROUTES = [
 {
@@ -47,6 +50,18 @@ const ROUTES = [
   path: 'projects',
   component: ProjectsComponent
 },
+{
+  path:'services/web',
+  component: ServiceWebComponent
+},
+{
+  path:'services/app',
+  component: ServiceAppComponent
+},
+{
+  path:'services/photo',
+  component: ServicePhotoComponent
+},
 ]
 
 @NgModule({
@@ -63,6 +78,9 @@ const ROUTES = [
     ProjectsComponent,
     HomeDirectionsComponent,
     SpinningGlobeComponent,
+    ServiceWebComponent,
+    ServiceAppComponent,
+    ServicePhotoComponent,
   ],
   imports: [
     BrowserModule,
