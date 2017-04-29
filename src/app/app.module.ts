@@ -22,6 +22,7 @@ import { SpinningGlobeComponent } from './components/spinning-globe/spinning-glo
 import { ServiceWebComponent } from './service-web/service-web.component';
 import { ServiceAppComponent } from './service-app/service-app.component';
 import { ServicePhotoComponent } from './service-photo/service-photo.component';
+import { AnimatedBannerComponent } from './components/animated-banner/animated-banner.component';
 
 const ROUTES = [
 {
@@ -81,6 +82,7 @@ const ROUTES = [
     ServiceWebComponent,
     ServiceAppComponent,
     ServicePhotoComponent,
+    AnimatedBannerComponent,
   ],
   imports: [
     BrowserModule,
